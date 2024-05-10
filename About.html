@@ -4,140 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About-page</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>   
-        @media (max-width: 768px) {
-            /* Call mobile.css for screens with a width of 768px or less */
-            @import url('mobile.css');
-        }
-    </style>
-</head>
-<body>
-
-<nav>
-    <div class="menu-icon" id="clicked-menu" onclick="toggleMenu()">&#9776;</div>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="prec onnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="Menubar.css">
+      <style>   
+    @media (max-width: 768px) {
+      /* Call mobile.css for screens with a width of 768px or less */
+      @import url('mobile.css');
+    }
+  </style>
+       </head>      
+    
+         <nav>
+    <div class="menu-icon" id="clicked-menu">&#9776;</div>
     <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="PHP/outofsession.php">Blog</a></li>
     </ul>
-</nav>
+  </nav>
 
-<main>
-    <div class="Menu">
-        <ul>
-            <li><a href="#work-experience">Work experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-        </ul>
+        <main>
+        <div class="Menu">
+          <ul>
+             <li><a href="#work-experience">Work experience></a></li>
+             <li><a href="#certifications">Certifications></a></li>
+          </ul>
+          </div>
+              
+            
+<h2>ABOUT ME</h2>    
+<section id="aboutme" class="info">
+  <div class="aboutme">
+    <div class="aboutme-border">
+    
+      <p>
+        My name is Abdirahman Hussein and I am a student at Queen Mary University studying Computer Science.
+        I am a Computer Science student and I am looking for new opportunities to learn and grow.
+      </p>
     </div>
+    <div class="aboutme-content">
+      <p>
+        I have experience with programming languages and have worked in different environments. I have experience with Java, Spring Boot, HTML, CSS, and JavaScript.
+        I have also worked on different projects and have experience with different technologies.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <h2>ABOUT ME</h2>
-    <section id="aboutme" class="info">
-        <div class="aboutme">
-            <div class="aboutme-border">
-                <p>
-                    My name is Abdirahman Hussein and I am a student at Queen Mary University studying Computer Science.
-                    I am a Computer Science student and I am looking for new opportunities to learn and grow.
-                </p>
-            </div>
-            <div class="aboutme-content">
-                <p>
-                    I have experience with programming languages and have worked in different environments. I have experience with Java, Spring Boot, HTML, CSS, and JavaScript.
-                    I have also worked on different projects and have experience with different technologies.
-                </p>
-            </div>
-        </div>
-    </section>
+            
+<a href="#work-experience"></a>
+<h2>WORK EXPERIENCE</h2>
+<section id="work-experience">
+<section id="link" class="header">
+</section>
+<article class="container-timeline">
+<section class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h3>2024</h3>
+      <h4>Axis Tuition Center, London</h4>
+      <p>Web Developer</p>
+      <p>November 2023 – January 2024</p>
+      <ul>
+        <li>Effectively implemented responsive web design principles, ensuring the 
+platform was fully optimized for an array of devices and diverse screen sizes. This strategic approach significantly improved user experience and 
+accessibility across smartphones, tablets, and desktops.</li>
+        <li>Seamlessly integrated a suite of interactive features, including quizzes, forums, and progress trackers, into the platform. This enhancement fostered a more 
+engaging and interactive learning environment, leading to noticeable improvements in user engagement and overall learning outcomes.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="container right">
+    <div class="content">
+      <h3>2022</h3>
+      <h4>CityTyres, Uganda</h4>
+      <p>Sales Promoted Marketer</p>
+      <p>May 2022 - September 2022 | May 2023 - Spetember 2023 </p>
+      <ul>
+        <li>Consequently achieved sales targets by leveraging in-depth product knowledge, communicating effectively with a team manager resulting in a 20% increase over set targets</li>
+        <li>Managed to develop strong customer relationships through personalized consultations offering tailored tire solutions that met specific needs and preferences</li>
+        <li>Promoted to a Marketer position after hitting targets consecutively for two months.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="container left">
+    <div class="content">
+      <h3>2021</h3>
+      <h4>Cafe Javas, Uganda</h4>
+      <p>IT Support</p>
+      <p>May 2021 - September 2021</p>
+      <ul>
+        <li>Achieved employee satisfaction by effectively solving IT-related issues, and immediate help in fixing dysfunctional technologies</li>
+        <li>Involvement in the choice of IT infrastructure focusing on the purchase of cheap and maintainable equipment. Collaborated with the procurement team to assess available options leveraging expertise and hence contributing to cost savings on infrastructure while ensuring scalability.</li>
+      </ul>
+    </div>
+  </div>
+  
+</section>
+</article>
 
-    <h2>WORK EXPERIENCE</h2>
-    <section id="work-experience">
-        <div class="container-timeline">
-            <section class="timeline">
-                <div class="container left">
-                    <div class="content">
-                        <h3>2024</h3>
-                        <h4>Axis Tuition Center, London</h4>
-                        <p>Web Developer</p>
-                        <p>November 2023 – January 2024</p>
-                        <ul>
-                            <li>Effectively implemented responsive web design principles, ensuring the platform was fully optimized for an array of devices and diverse screen sizes. This strategic approach significantly improved user experience and accessibility across smartphones, tablets, and desktops.</li>
-                            <li>Seamlessly integrated a suite of interactive features, including quizzes, forums, and progress trackers, into the platform. This enhancement fostered a more engaging and interactive learning environment, leading to noticeable improvements in user engagement and overall learning outcomes.</li>
-                        </ul>
-                    </div>
-                </div>
+<article id="skills">
+  <h2>TOP SKILLS</h2>
+ <ul>
+    <li class="items">
+      <img src="Project photos/first.png" alt="first">
+      <p>Java Programming Language</p>
+    </li>
+    <li class="items">
+      <img src="Project photos/second.png" alt="second">
+      <p>Spring Boot</p>
+    </li>
+    <li class="items">
+      <img src="Project photos/third.png" alt="third">
+      <p>HTML, CSS and JavaScript</p>
+    </li>
+  </ul>
+</article>
 
-                <div class="container right">
-                    <div class="content">
-                        <h3>2022</h3>
-                        <h4>CityTyres, Uganda</h4>
-                        <p>Sales Promoted Marketer</p>
-                        <p>May 2022 - September 2022 | May 2023 - September 2023</p>
-                        <ul>
-                            <li>Consequently achieved sales targets by leveraging in-depth product knowledge, communicating effectively with a team manager resulting in a 20% increase over set targets</li>
-                            <li>Managed to develop strong customer relationships through personalized consultations offering tailored tire solutions that met specific needs and preferences</li>
-                            <li>Promoted to a Marketer position after hitting targets consecutively for two months.</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="container left">
-                    <div class="content">
-                        <h3>2021</h3>
-                        <h4>Cafe Javas, Uganda</h4>
-                        <p>IT Support</p>
-                        <p>May 2021 - September 2021</p>
-                        <ul>
-                            <li>Achieved employee satisfaction by effectively solving IT-related issues, and immediate help in fixing dysfunctional technologies</li>
-                            <li>Involvement in the choice of IT infrastructure focusing on the purchase of cheap and maintainable equipment. Collaborated with the procurement team to assess available options leveraging expertise and hence contributing to cost savings on infrastructure while ensuring scalability.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
+            <aside id="certifications">
+                <h2>CERTIFICATIONS</h2>
+                <ul>
+                    <li>
+                      FITA JAVA TRAINING
+                    </li>
+                    <li>
+                       Microsoft Azure 900 Cloud Fundamentals
+                    </li>
+                    <li>
+                        FY24 EMBRACE MENTORING PROGRAM
+                    </li>
+                    <li>
+                        VIRTUAL INTERNSHIP EXPERIENCE PROGRAM
+                    </li>
+          
+                </ul>
+            </aside>
+            
+        </main>
 
-    <aside id="certifications">
-        <h2>CERTIFICATIONS</h2>
-        <ul>
-            <li>FITA JAVA TRAINING</li>
-            <li>Microsoft Azure 900 Cloud Fundamentals</li>
-            <li>FY24 EMBRACE MENTORING PROGRAM</li>
-            <li>VIRTUAL INTERNSHIP EXPERIENCE PROGRAM</li>
-        </ul>
-    </aside>
-</main>
-
-<footer id="footer" class="footer">
+  <footer id="footer" class="footer">
     <div class="footer-content">
-        <div class="footer-section">
-            <h3>References</h3>
-            <ul>
-                <li><a href="CV.html">My CV</a></li>
-                <li><a href="Home-BlogPage.html">More About Me</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Companies Worked For</h3>
-            <ul>
-                <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
-                <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Achievements</h3>
-            <ul>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="Projectsfinal.html">Projects</a></li>
-            </ul>
-        </div>
+      <div class="footer-section">
+        <h3>References</h3>
+        <ul>
+          <li><a href="CV.html">My CV</a></li>
+          <li><a href="Home-BlogPage.html">More About Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Companies Worked For</h3>
+        <ul>
+          <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
+          <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Achievements</h3>
+        <ul>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="Projectsfinal.html">Projects</a></li>
+        </ul>
+      </div>
     </div>
     <div class="contact-info">
-        <h3>Contact Me</h3>
-        <p>Email: abdulxxx321@gmail.com</p>
-        <p>Phone: +1 123-456-7890</p>
+      <h3>Contact Me</h3>
+      <p>Email: abdulxxx321@gmail.com</p>
+      <p>Phone: +1 123-456-7890</p>
     </div>
-</footer>
+  </footer>
+      
+    </div>
+  
 
-</body>
+
 </html>
