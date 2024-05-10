@@ -317,3 +317,10 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     margin-top: 50px; /* Keep margin consistent */
   }
 }
+/* Hide image on smaller screens */
+@media screen and (max-width: 458px) {
+  .photo {
+    display: none;
+  }
+}
+
