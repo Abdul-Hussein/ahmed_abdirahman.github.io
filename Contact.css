@@ -223,8 +223,113 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 }
 
 /* Hide image on smaller screens */
-@media screen and (max-width: 458px) {
-  .photo {
-    display: none;
-  }
+@media screen and (max-width: 550px) {
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default font styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+/* Main container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Contact section styles */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-message {
+  flex: 1;
+}
+
+.photo {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form styles */
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-header h1 {
+  font-size: 2rem;
+}
+
+.form-header h2 {
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+  /* Styles for home, about me, and important links */
+.home-page,
+.About-me,
+.ImportantLinks {
+  color: #21b7b3;
+  font-family: 'Georgia', serif;
+  font-size: 1rem; /* Adjust font size */
+  text-decoration: none;
+  margin-right: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for home, about me, and important links */
+.home-page:hover,
+.About-me:hover,
+.ImportantLinks:hover {
+  color: #112033;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #112033;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e6f63;
+}
+
 }
