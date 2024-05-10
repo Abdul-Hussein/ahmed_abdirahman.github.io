@@ -11,3 +11,10 @@ document.getElementById('menu-button').addEventListener('click', function() {
     var event = new Event('clicked-menu');
     document.dispatchEvent(event);
 });
+
+
+// JavaScript function to toggle the menu on smaller screens
+function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
