@@ -1,0 +1,147 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 75em; /* 1200px converted to em */
+  margin: 0 auto;
+  padding: 1.25em; /* 20px converted to em */
+}
+
+.home-buttons {
+  text-align: center;
+}
+
+
+
+
+.About-me,
+.ImportantLinks,
+.Experience {
+  color: #21b7b3;
+  font-family: 'Georgia', serif;
+  font-size: 1em; 
+  text-decoration: none;
+  margin-right: 1.25em; 
+  transition: color 0.3s ease;
+}
+
+
+.About-me:hover,
+.ImportantLinks:hover,
+.Experience:hover {
+  color: #112033;
+}
+
+/* Profile section styles */
+.profile-section {
+  text-align: center;
+  margin-top: 3.125em; 
+}
+
+.profile-photo {
+  max-width: 12.5em; 
+  border-radius: 50%;
+  margin-top: 0.625em; 
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); 
+}
+
+.header {
+  color: #21b7b3;
+  margin-top: 2em;
+}
+
+.lang {
+  font-weight: bold;
+}
+
+/* About section styles */
+.section-title {
+  font-weight: bold;
+  color: #21b7b3;
+  font-size: 1.5em; 
+  margin-top: 0.3125em; 
+}
+
+.about-section {
+  background: linear-gradient(to right, #112033, #1e6f63);
+  color: white;
+  padding: 1.25em; 
+  margin-top: 3.125em;
+  border-radius: 0.625em; 
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); 
+}
+
+.Links-header {
+  margin-top: 3em; 
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+/* To be worked on */
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3.125em;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 18.75em; 
+  max-width: 100%;
+  min-width: 15.625em;
+  padding: 1.25em;
+  margin-bottom: 1.25em; 
+  border-radius: 0.625em; 
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.313em);
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 0.625em; 
+  max-height: 9.375em;
+  object-fit: cover;
+  margin-bottom: 0.9375em; 
+}
+
+.card-title {
+  color: #112033;
+  font-size: 1.2em; 
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.card-text {
+  color: #555;
+  text-align: center;
+  font-family: 'Garamond', serif;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.875em; 
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, #112033, #1e6f63);
+  padding: 0.5em 1.25em; 
+  border-radius: 1.25em; 
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.063em; 
+  text-align: center; 
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #1e6f63, #112033);
+}

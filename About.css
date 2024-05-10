@@ -1,0 +1,196 @@
+/* Overall styles */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Menu links for the About page */
+.Menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem;
+  text-align: center;
+}
+
+.Menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: #21b7b3;
+  font-weight: bold;
+}
+
+.Menu a:hover {
+  color: #007bff;
+}
+
+/* Center align the header */
+h2 {
+  text-align: center;
+  display: block;
+  margin: 2rem;
+  color: #21b7b3;
+  font-size: 1.5rem;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme-border {
+  border-right: 1px solid #cccccc;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.aboutme p {
+  max-width: 400px;
+  text-align: left;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.aboutme h2 {
+  text-align: center;
+}
+
+/* Timeline CSS */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.container-timeline {
+  padding: 10px 40px;
+  margin: 2rem 0;
+  position: relative;
+  border-left: 2px solid white;
+  border-radius: 8px;
+  background-color: #21b7b3;
+}
+
+.content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h3 {
+  margin-top: 0;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+.container.left {
+  padding-left: 80px;
+}
+
+.container.right {
+  padding-right: 80px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+.container.left::before {
+  left: -30px;
+  width: 50px;
+}
+
+.container.right::before {
+  right: -30px;
+  width: 50px;
+}
+
+#certifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+#certifications ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#certifications li {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#skills {
+  text-align: center;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-item {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .Menu li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .aboutme-border {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .aboutme p {
+    max-width: none;
+  }
+
+  .container.left,
+  .container.right {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
