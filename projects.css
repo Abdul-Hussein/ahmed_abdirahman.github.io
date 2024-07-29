@@ -1,8 +1,4 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 @media (max-width: 768px) {
 .video-title {
@@ -66,6 +62,23 @@ font-size: 3rem;
 font-family: 'Courier New', Courier, monospace;
 }
 
+h2 {
+color: blue;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+}
+
+
+
 /*Icon styles*/
 .logos-slide {
 white-space: nowrap;
@@ -77,7 +90,6 @@ overflow: hidden;
 padding: 60px 0;
 background-color: white;
 }
-
 
 
 @keyframes slide {
@@ -145,79 +157,130 @@ color: #2496ED; /* Custom color for Docker */
 
 
 
-h2 {
-color: blue;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 2rem;
-margin-bottom: 1rem;
-}
-
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-text-decoration: none;
+/*Project styles*/
+.project_display {
+display: flex;
 }
 
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+figcaption {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 92.5%;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.5);
+color: aliceblue;
+text-align: center;
 }
 
-.project-card {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.badge {
+position: absolute;
+top: 0.5rem;
+left: 1rem;
+max-height: 4rem;
+border-radius: 3rem;
 }
 
-.project-image {
-    flex: 1;
-    max-width: 50%;
+.Projects {
+background-color: rgb(208, 205, 205);
+margin-bottom: -1rem;
+padding-bottom: 2rem;
+max-width: 100;
+margin: 2rem;
+max-width: 100%;
 }
 
-.project-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+.text-container {
+margin-left: 20px;
+width: 900px;
+margin-top: 6rem;
+padding-left: 0.5rem;
 }
 
-.project-description {
-    flex: 1;
-    padding: 1rem;
-}
+.fig {
+max-width: 25rem;
+max-height: 25rem;
+max-width: 100%;
 
-.project-description h2 {
-    color: blue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-}
-
-.project-description p {
-    margin: 1rem 0;
-}
-
-.tech-icons {
-    margin: 1rem 0;
-}
-
-.tech-icons i {
-    margin-right: 0.5rem;
 }
 
 .button-container {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
+display: flex;
+margin-top: 10px;
+}
+
+.button {
+margin-right: 10px;
+}
+
+.button a,
+.button a:hover,
+.button a:visited {
+display: inline-block;
+padding: 10px 20px;
+background-color: #21b7b3;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.button a:hover {
+background-color: #186367;
+}
+
+.container {
+text-align: center; /* Center align container content */
+}
+
+.container {
+text-align: center; /* Center align container content */
 }
 
 
+
+.container {
+text-align: center;
+}
+
+
+.card--container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 20px;
+background-color: #186367;
+}
+
+.card--article {
+flex: 1;
+margin: 10px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+overflow: hidden; /* Ensure text doesn't overflow */
+}
+
+
+
+
+/* Media query for screens up to 360px */
+
+@media screen and (max-width: 360px) {
+.text-content .paragraph {
+width: 90%; /* Adjust the width as needed for screens with a width of 360px or less */
+margin: 0 auto; /* Center the paragraph */
+}
+}
+
+/* Media query for screens up to 768px */
+
+@media screen and (max-width: 768px) {
+.project_display {
+flex-direction: column; /* Display items vertically */
+align-items: center; /* Center align items horizontally */
+overflow: hidden; /* Ensure the image is clipped to the border-radius */
+}
 
 figure {
 order: -1; /* Move the figure (image) to the top */
@@ -228,7 +291,6 @@ border-radius: 50%; /* Make the image round */
 
 
 }
-
 .paragraph{
 width: 400px;
 
@@ -239,42 +301,114 @@ order: 0; /* Move the title to the middle */
 width: 100%; /* Set full width for smaller screens */
 margin-top: 1rem; /* Adjust top margin */
 }
+}
+
+@keyframes slide {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(-100%);
+}
+}
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-description {
+  flex: 1;
+  padding: 1rem;
+}
+
+.project-description h2 {
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+.project-description p {
+  margin: 1rem 0;
+}
+
+.tech-icons {
+  margin: 1rem 0;
+}
+
+.tech-icons i {
+  margin-right: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #21b7b3;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #21b7b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #186367;
+  background-color: #186367;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
-    }
+  .project-card {
+      flex-direction: column;
+  }
 
-    .project-image {
-        max-width: 100%;
-    }
+  .project-image {
+      max-width: 100%;
+  }
 
-    .project-description {
-        padding: 1rem;
-    }
+  .project-description {
+      padding: 1rem;
+  }
 
-    .tech-icons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
+  .tech-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+  }
 
-    .button-container {
-        flex-direction: column;
-    }
+  .button-container {
+      flex-direction: column;
+  }
 }
