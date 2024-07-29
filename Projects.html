@@ -12,11 +12,11 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="CSS/Menubar.css">
+    <link rel="stylesheet" href="Menubar.css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/projects.css">
-    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="footer.css">
     <style>   
         @media (max-width: 768px) {
             /* Call mobile.css for screens with a width of 768px or less */
@@ -27,12 +27,13 @@
 <body>
     <header>
       <nav>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-icon" id="clicked-menu">&#9776;</div>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
           <li><a href="Projects.html">Projects</a></li>
           <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Home-BlogPage.html">Blog</a></li>
+          <li><a href="PHP/outofsession.php">Blog</a></li>
           </ul>
       </nav>
     </header>
@@ -102,7 +103,7 @@
                 <div class="text-container">
                     <h2 class="header">The Book Register App</h2>
                     <div class="text-content">
-                        <p class="paragraph">The Book Catalog Website is a 
+                        <p class="paragraph">The Book Register Website is a 
                             user-friendly platform for managing and browsing a collection of books.
                             It features a table layout for organized presentation,
                             a search bar for quick book discovery, 
@@ -120,10 +121,35 @@
                     </div>
                 </div>
                 <figure>
-                    <img class="fig" src="Project photos/Bookreg-photo.jpg" alt="FPL PROJECT">
+                    <img class="fig" src="Project photos/Bookreg-photo.png" alt="FPL PROJECT">
                     <img class="badge" src="Project photos/second.png" alt="Rank Icon" class="overlayed">
                 </figure>
             </div>
+
+
+            <br><br><br>
+                 <div class="project_display">
+                <figure>
+                    <img class="fig" src="Project photos/HorseRacer photo.png" alt="FPL PROJECT">
+                    <img class="badge" src="Project photos/third.png" alt="Rank Icon" class="overlayed">
+                </figure>
+                <div class="text-container">
+                    <h2 class="header">Horse Racer Game</h2>
+                    <div class="text-content">
+                        <p class="paragraph">Used Java to create a horse Racer game. Made use of Java Swing to add animations to the game, such as allowing users to experience a  virtual race experience, printing out the winner and allowing users to customize horses.</p>
+                            <div class="images">
+                                
+                              <i class="fa-brands fa-java java"></i>
+                          
+                            </div>
+                        <div class="button-container">
+                            <b class="button"><a href="#">View it here</a></b>
+                            <b class="button"><a href="https://github.com/Abdul-Hussein/HORSE-RACER-GAME/tree/GUI-Features">GitHub</a></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </article>
     </main>
 
