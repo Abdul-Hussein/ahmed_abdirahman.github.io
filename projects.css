@@ -1,106 +1,108 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-  text-align: center;
-  color: #186367;
-  font-size: 3rem;
-  margin: 2rem 0;
+    text-align: center;
+    color: #186367;
+    font-size: 3rem;
+    margin: 2rem 0;
 }
 
 .project-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .project-card {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow
+    : 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .project-image {
-  flex: 1;
-  max-width: 50%;
+    flex: 1;
+    max-width: 50%;
 }
 
 .project-image img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .project-description {
-  flex: 1;
-  padding: 1rem;
+    flex: 1;
+    padding: 1rem;
 }
 
 .project-description h2 {
-  color: blue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.5rem;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
 }
 
 .project-description p {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .tech-icons {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .tech-icons i {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .button-container {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 .button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #21b7b3;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #21b7b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #186367;
+    background-color: #186367;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .project-card {
-      flex-direction: column;
-  }
+    .project-card {
+        flex-direction: column;
+    }
 
-  .project-image {
-      max-width: 100%;
-  }
+    .project-image {
+        max-width: 100%;
+    }
 
-  .project-description {
-      padding: 1rem;
-  }
+    .project-description {
+        padding: 1rem;
+    }
 
-  .tech-icons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-  }
+    .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
 
-  .button-container {
-      flex-direction: column;
-  }
+    .button-container {
+        flex-direction: column;
+    }
 }
