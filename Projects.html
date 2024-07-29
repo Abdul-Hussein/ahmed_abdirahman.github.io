@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Projects Page</title>
     <link rel="stylesheet" href="CSS/Contactfinal.css"> <!-- Link to external CSS file -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/26111a072d.js" crossorigin="anonymous"></script>
@@ -33,186 +33,126 @@
           <li><a href="About.html">About</a></li>
           <li><a href="Projects.html">Projects</a></li>
           <li><a href="Contact.html">Contact</a></li>
-        
-          </ul>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <section class="video-section">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="Video.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay">
-            <h1 class="video-title">My Projects</h1>
-            <button class="video-button"><a href="#Projects">Explore</a></button>
-        </div>
-    </section>
-        
-    <section>
-      <div class="logos">
-        <div class="logos-slide">
-          <i class="fab fa-spring-boot spring-boot"></i>
-          <i class="fa-brands fa-css3-alt css3"></i>
-          <i class="fa-brands fa-java java"></i>
-          <i class="fab fa-html5 html5"></i>
-          <i class="fa-brands fa-js js"></i>
-          <i class="fa-brands fa-aws aws"></i>
-          <i class="fa-brands fa-git"></i>
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-solid fa-database"></i>
-          <i class="fa-brands fa-docker"></i>
-        </div>
-      </div>
-    </section>
-    
-        <section>
-          <h1>What I Have Worked On</h1>
-        </section>
-
-      
-        <article class="Projects" id="Projects">
-         <div class="project_display">
-    <figure>
-        <img class="fig" src="Gym-mgt.png" alt="Gym Management System">
-        <img class="badge" src="first.png" alt="Rank Icon" class="overlayed">
-    </figure>
-    <div class="text-container">
-        <h2 class="header">Gym Management System</h2>
-        <div class="text-content">This system integrates tools for managing memberships, tracking workouts,processing payments and choosing packages. With features tailored to meet the specific needs of a local fitness center, it ensures smooth day-to-day operations and provides a user-friendly experience for both staff and members. Has improved overall member satisfaction.</p>
-            <div class="images">
-                <i class="fa-brands fa-java java"></i>
-                <i class="fa-brands fa-html5 html5"></i>
-                <i class="fa-brands fa-database database"></i>
-            </div>
-            <div class="button-container">
-                <b class="button"><a href="#">View it here</a></b>
-                <b class="button"><a href="https://github.com/Abdul-Hussein/GymMgt">GitHub</a></b>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-            <br><br><br>
-
-            <div class="project_display">
-                <div class="text-container">
-                    <h2 class="header">The Book Register App</h2>
-                    <div class="text-content">
-                        <p class="paragraph">The Book Register Website is a 
-                            user-friendly platform for managing and browsing a collection of books.
-                            It features a table layout for organized presentation,
-                            a search bar for quick book discovery, 
-                            and pagination for navigating through extensive listings.</p>
-                         <div class="images">
-                          <img class="project-languages" src="Spring-boot-logo.png" alt="">
-                          <i class="fa-brands fa-css3-alt css3"></i>
-                          <i class="fa-brands fa-java java"></i>
-                          <i class="fab fa-html5 html5"></i>
-                        </div>
-                        <div class="button-container">
-                            <b class="button"><a href="#">View it here</a></b>
-                            <b class="button"><a href="https://github.com/Abdul-Hussein/BookManagement.git">GitHub</a></b>
-                        </div>
+      <section>
+        <h1>My Projects</h1>
+        <div class="project-container">
+            <!-- Gym Management System -->
+            <div class="project-card">
+                <figure class="project-image">
+                    <img src="Gym-mgt.png" alt="Gym Management System">
+                </figure>
+                <div class="project-description">
+                    <h2>Gym Management System</h2>
+                    <p>This system integrates tools for managing memberships, tracking workouts, processing payments, and choosing packages. With features tailored to meet the specific needs of a local fitness center, it ensures smooth day-to-day operations and provides a user-friendly experience for both staff and members. It has improved overall member satisfaction.</p>
+                    <div class="tech-icons">
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-database"></i>
                     </div>
-                </div>
-                <figure>
-                    <img class="fig" src="Bookreg-photo.png" alt="FPL PROJECT">
-                    <img class="badge" src="second.png" alt="Rank Icon" class="overlayed">
-                </figure>
-            </div>
-
-
-            <br><br><br>
-                 <div class="project_display">
-                <figure>
-                    <img class="fig" src="HorseRacer photo.png" alt="FPL PROJECT">
-                    <img class="badge" src="third.png" alt="Rank Icon" class="overlayed">
-                </figure>
-                <div class="text-container">
-                    <h2 class="header">Horse Racer Game</h2>
-                    <div class="text-content">
-                        <p class="paragraph">Used Java to create a horse Racer game. Made use of Java Swing to add animations to the game, such as allowing users to experience a  virtual race experience, printing out the winner and allowing users to customize horses.</p>
-                            <div class="images">
-                                
-                              <i class="fa-brands fa-java java"></i>
-                          
-                            </div>
-                        <div class="button-container">
-                            <b class="button"><a href="#">View it here</a></b>
-                            <b class="button"><a href="https://github.com/Abdul-Hussein/HORSE-RACER-GAME/tree/GUI-Features">GitHub</a></b>
-                        </div>
+                    <div class="button-container">
+                        <a href="#" class="button">View it here</a>
+                        <a href="https://github.com/Abdul-Hussein/GymMgt" class="button">GitHub</a>
                     </div>
                 </div>
             </div>
- <br><br><br>
-             <div class="project_display">
-               
-                <div class="text-container">
-                    <h2 class="header">The Fantasy League Application</h2>
-                    <div class="text-content">
-                        <p class="paragraph">Experience the thrill of managing your own fantasy football team with our Fantasy League Application.
-                            Create your dream team, strategize your lineup, and compete against friends in simulated football matches.
-                            Whether you're a seasoned fantasy football veteran or new to the game,
-                            our application offers an exciting and immersive experience for football enthusiasts of all levels</p>
-                            <div class="images">
-                               <i class="fa-brands fa-css3-alt css3"></i>
-                              <i class="fa-brands fa-java java"></i>
-                              <i class="fab fa-html5 html5"></i>
-                            </div>
-                        <div class="button-container">
-                            <b class="button"><a href="#">View it here</a></b>
-                            <b class="button"><a href="https://github.com/Abdul-Hussein/fantasyLeague.git">GitHub</a></b>
-                        </div>
-                    </div>
-                </div>
-                  <figure>
-                    <img class="fig" src="Fpl photo.png" alt="FPL PROJECT">
-                    <img class="badge" src="fourth.png" alt="Rank Icon" class="overlayed">
-                </figure>
-            </div>
-
-           
-
             
-        </article>
+            <!-- The Book Register App -->
+            <div class="project-card">
+                <figure class="project-image">
+                    <img src="Bookreg-photo.png" alt="The Book Register App">
+                </figure>
+                <div class="project-description">
+                    <h2>The Book Register App</h2>
+                    <p>The Book Register Website is a user-friendly platform for managing and browsing a collection of books. It features a table layout for organized presentation, a search bar for quick book discovery, and pagination for navigating through extensive listings.</p>
+                    <div class="tech-icons">
+                        <img src="Spring-boot-logo.png" alt="Spring Boot" class="project-languages">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="button">View it here</a>
+                        <a href="https://github.com/Abdul-Hussein/BookManagement.git" class="button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Horse Racer Game -->
+            <div class="project-card">
+                <figure class="project-image">
+                    <img src="HorseRacer photo.png" alt="Horse Racer Game">
+                </figure>
+                <div class="project-description">
+                    <h2>Horse Racer Game</h2>
+                    <p>Used Java to create a horse racing game with Java Swing for animations. Users experience a virtual race, view the winner, and can customize horses.</p>
+                    <div class="tech-icons">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="button">View it here</a>
+                        <a href="https://github.com/Abdul-Hussein/HORSE-RACER-GAME/tree/GUI-Features" class="button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fantasy League Application -->
+            <div class="project-card">
+                <figure class="project-image">
+                    <img src="Fpl photo.png" alt="Fantasy League Application">
+                </figure>
+                <div class="project-description">
+                    <h2>The Fantasy League Application</h2>
+                    <p>Experience the thrill of managing your own fantasy football team with our Fantasy League Application. Create your dream team, strategize your lineup, and compete against friends in simulated football matches. Whether you're a seasoned fantasy football veteran or new to the game, our application offers an exciting and immersive experience for football enthusiasts of all levels.</p>
+                    <div class="tech-icons">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="button">View it here</a>
+                        <a href="https://github.com/Abdul-Hussein/fantasyLeague.git" class="button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
     </main>
 
-    
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>References</h3>
-      <ul>
-        <li><a href="CV.html">My CV</a></li>
-        <li><a href="Home-BlogPage.html">More About Me</a></li>
-        <!-- Add LinkedIn link here -->
-       
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Companies Worked For</h3>
-      <ul>
-        <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
-        <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Achievements</h3>
-      <ul>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="Projectsfinal.html">Projects</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="contact-info">
-    <h3>Contact Me</h3>
-    <p>Email: abdulxxx321@gmail.com</p>
-    <p>Phone: +1 123-456-7890</p>
-  </div>
-</footer>
-
-
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>References</h3>
+          <ul>
+            <li><a href="CV.html">My CV</a></li>
+            <li><a href="Home-BlogPage.html">More About Me</a></li>
+            <!-- Add LinkedIn link here -->
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Companies Worked For</h3>
+          <ul>
+            <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
+            <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Achievements</h3>
+          <ul>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="Projectsfinal.html">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Me</h3>
+        <p>Email: abdulxxx321@gmail.com</p>
+        <p>Phone: +1 123-456-7890</p>
+      </div>
+    </footer>
 </body>
 </html>
